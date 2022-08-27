@@ -1,8 +1,9 @@
 const root = document.getElementById('root');
+root.style.textAlign = 'center';
 const input = document.createElement('input');
-
 const btn = document.createElement('button');
 const btntxt = document.createTextNode('add');
+
 btn.appendChild(btntxt);
 btn.addEventListener("click", ()=>{
     const res = document.createElement('div');
@@ -23,4 +24,4 @@ btn.addEventListener("click", ()=>{
 
 
 root.appendChild(input);
-root.appendChild(btn);
+root.appendChild(btn);  
