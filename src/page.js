@@ -1,10 +1,13 @@
 import adding from './add.js';
-import deleting from './del.js';
 
-const root = document.getElementById('root  ');
-const element = document.createElement('div');
-element.innerHTML = `
+const root = document.getElementById('root');
+root.innerHTML = `
     <input type='text'/>
-    <button>chk</button>
+    <button>입력</button>
 `
-root.appendChild(element);
+const addbtn = root.querySelector('button');
+const textvalue = root.querySelector('input');
+addbtn.addEventListener("click", ()=>{
+    adding(textvalue.value);
+    textvalue.value = "";
+})
