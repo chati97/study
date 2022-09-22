@@ -9,6 +9,7 @@ function adding(val){
     const outtxt = subdiv.querySelector('li');
     const outvalue = document.createTextNode(val);
     outtxt.appendChild(outvalue);
+    //outtxt.innerText = val;
     const delbtn = subdiv.querySelector('button');
     delbtn.addEventListener("click", ()=>{
         deleting(subdiv)
