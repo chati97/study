@@ -1,3 +1,4 @@
+/*
 import deleting from './del.js';
 function adding(val){
     const root = document.getElementById('root');
@@ -17,3 +18,4 @@ function adding(val){
     root.appendChild(subdiv);
 }
 export default adding;
+*/
